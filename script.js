@@ -1,4 +1,4 @@
-const counter = document.querySelector("#counter");
+/* const counter = document.querySelector("#counter");
 const hero = document.querySelector("#hero")
 
 gsap.set(".video-container",{
@@ -9,7 +9,7 @@ gsap.set(".video-container",{
 gsap.to("#hero",{
     clipPath: "polygon(0% 45%, 25% 45%, 25% 55%, 0% 55%)",
     duration: 1.5,
-   /*  ease: "power.out", */
+     ease: "power.out", 
     delay: 1,
 });
 
@@ -77,7 +77,7 @@ gsap.to("#hero",{
             }
         });
     },
-});
+}); */
 
 gsap.to([".header span", ".coordinates span"], {
     y: "0%",
@@ -85,4 +85,4 @@ gsap.to([".header span", ".coordinates span"], {
     stagger: 0.125,
     ease: "power3.out",
     delay: 5.75
-});
+}); 

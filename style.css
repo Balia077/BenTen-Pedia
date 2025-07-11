@@ -26,11 +26,10 @@ p{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    clip-path: polygon(0% 45%, 0% 45%, 0% 55%, 0% 55%);
-    will-change: clip-path;
+   
 }
 
-.progress-bar{
+/* .progress-bar{
     position: relative;
     top: 50%;
     left: 0;
@@ -41,7 +40,7 @@ p{
     justify-content: space-between;
     align-items: center;
     color: #ffbb00;
-}
+} */
 
 .video-container{
     position: absolute;
@@ -50,10 +49,6 @@ p{
     transform: translate(-50%, -50%);
     width: 100vw;
     height: 100svh;
-    background-color: #000;
-    clip-path: 20% 20%, 80% 10%, 80% 80%, 20% 80%;
-    will-change: transform, clip-path;
-    overflow: hidden;
 }
 
 .video-container video{
@@ -137,10 +132,10 @@ footer{
     z-index: 2;
 }
 
-.char.anim-out h1{
+/* .char.anim-out h1{
     position: relative;
     will-change: transform;
-}
+} */
 
 .header h1, .header p, .coordinates p, .char.anim-out{
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
@@ -178,3 +173,4 @@ footer{
         opacity: 0.5;
     }
 }
+
