@@ -1,4 +1,4 @@
-/* const counter = document.querySelector("#counter");
+const counter = document.querySelector("#counter");
 const hero = document.querySelector("#hero")
 
 gsap.set(".video-container",{
@@ -6,54 +6,17 @@ gsap.set(".video-container",{
     rotation: -20,
 });
 
-gsap.to("#hero",{
-    clipPath: "polygon(0% 45%, 25% 45%, 25% 55%, 0% 55%)",
-    duration: 1.5,
-     ease: "power.out", 
-    delay: 1,
-});
 
 gsap.to("#hero",{
-    clipPath: "polygon(0% 45%, 100% 45%, 100% 55%, 0% 55%)",
-    duration: 2,
-    ease: "power.out",
-    delay: 3,
-
-    onStart: () => {
-        gsap.to(".progress-bar",{
-            width: "100vw",
-            duration: 2,
-            ease: "power.out",
-        });
-
-        gsap.to(counter,{
-            innerHTML: 100,
-            duration: 2,
-            ease: "power.out",
-            snap: {innerHTML: 1},
-        })
-    },
-});
-
-gsap.to("#hero",{
-    clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-    duration: 1,
-    ease: "power1.out",
-    delay: 5,
     onStart: () => {
         gsap.to(".video-container",{
             scale: 1,
             rotation: 0,
             clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-            duration: 1.25,
+            duration: 1,
+            delay: 4.5,
             ease: "power2.out"
         });
-
-        gsap.to(".progress-bar",{
-            opacity: 0,
-            duration: 0.3,
-        });
-
         gsap.to(".logo",{
             left: "0%",
             transform: "translateX(0%)",
@@ -77,7 +40,7 @@ gsap.to("#hero",{
             }
         });
     },
-}); */
+});
 
 gsap.to([".header span", ".coordinates span"], {
     y: "0%",
@@ -86,3 +49,9 @@ gsap.to([".header span", ".coordinates span"], {
     ease: "power3.out",
     delay: 5.75
 }); 
+
+var loader = document.querySelector("#loader")
+
+setTimeout(function(){
+    loader.style.top = "-100%"
+},4000)
