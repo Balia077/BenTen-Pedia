@@ -9,11 +9,11 @@ html, body{
     background-color: #e3e3db;
 }
 
-body {
-  overflow-y: hidden; /* Hide vertical scrollbar */
-  overflow-x: hidden; /* Hide horizontal scrollbar */
+/* body {
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
-
+ */
 p{
     position: relative;
     font-size: 14px;
