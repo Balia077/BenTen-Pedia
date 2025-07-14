@@ -9,11 +9,11 @@ html, body{
     background-color: #e3e3db;
 }
 
-/* body {
+body {
   overflow-y: hidden;
   overflow-x: hidden;
 }
- */
+
 p{
     position: relative;
     font-size: 14px;
@@ -32,54 +32,6 @@ p{
     flex-direction: column;
     justify-content: space-between;
    
-}
-
-/* .progress-bar{
-    position: relative;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    width: 25vw;
-    padding: 2em;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: #ffbb00;
-} */
-
-.video-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    z-index: 0; /* Ensure it stays behind all content */
-}
-
-.video-container video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    opacity: 0.5;
-    pointer-events: none;
-}
-
-
-nav, footer{
-    width: 100vw;
-    padding: 1.5em;
-    display: flex;
-    justify-content: space-between;
-    color: #fff;
-    mix-blend-mode: difference;
-    z-index: 2;
-}
-
-footer{
-    justify-content: flex-end;
-    gap: 1em;
 }
 
 .header{
@@ -135,10 +87,6 @@ footer{
     z-index: 2;
 }
 
-/* .char.anim-out h1{
-    position: relative;
-    will-change: transform;
-} */
 
 .header h1, .header p, .coordinates p, .char.anim-out{
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
@@ -154,14 +102,6 @@ footer{
 @media(max-width: 900px){
     p{
         font-size: 13px;
-    }
-
-    .progress-bar{
-        justify-content: flex-end;
-    }
-
-    .progress-bar p:nth-child(1){
-        display: none;
     }
 
     .header h1{
